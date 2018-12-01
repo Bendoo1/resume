@@ -61,6 +61,7 @@ h1,h2,h3,h4 {
     display:table;
 }
 
+.history-heading,
 .section-heading {
     font-family: "Exo", sans-serif;
     font-weight:300;
@@ -264,7 +265,7 @@ footer .cv-pdf i:hover {
     padding: 4em 2em 0em 2em;
     position: relative;
     color: #fafafa;
-    border: 1px solid;
+    border-left: 1px solid;
 }
 
 .timeline-item p {
@@ -273,7 +274,7 @@ footer .cv-pdf i:hover {
 }
 
 .timeline-item::before {
-    content: attr(date);
+    content: attr(dates);
     position: absolute;
     left: 2.5em;
     top: 3em;
@@ -295,8 +296,15 @@ footer .cv-pdf i:hover {
     border-radius: 12px;
     content: "";
     background: #fafafa;
-    
-    
+}
+
+.history-heading {
+    color: #fafafa;
+    margin-bottom: 50px;
+}
+
+.history-items {
+    margin-bottom: 30px;
 }
 /*--------------------------------------------Skills*/
 
